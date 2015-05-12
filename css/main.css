@@ -1,0 +1,1645 @@
+
+/*------------ SITE INFO -------------
+
+fonts:
+------
+font-family: 'Josefin Sans', sans-serif;
+
+colors:
+-------
+
+#6c6f73 | rgb(108,111,115)
+#848b8c | rgb(132,139,140)
+#9ca6a0 | rgb(156,166,160)
+#b0bfb4 | rgb(176,191,180)
+#c8d9c7 | rgb(200,217,199)
+
+
+
+front-page titles: ;
+headline titles: ;
+navbar links a: color: #b0bfb4;
+navbar links a:hover: color: #c8d9c7 ;
+general links a: ;
+general links a:hover : ;
+
+----------------------------------------*/
+*{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+html,body{
+    height: auto;
+}
+
+body.custom-background{
+	background-size: 100%;
+
+}
+
+/*--------------------------------- 
+	START OF NAVBAR
+----------------------------------- */
+
+
+div.navbar-header{
+	display: inline-block;
+	width: 25%;
+}
+
+a.navbar-brand{
+	margin-top: -5%;
+}
+
+li.navLink{ 
+	margin-top: 0%;
+}
+
+a.navLink{
+	margin-top: 20%;
+}
+
+img.logo{
+	max-width: 100%;
+	height: auto;
+	margin-top: 2%;
+	margin-left: 1%;
+}
+
+nav.navbar-inverse{
+	background: black;
+	background-image: none;
+	font-size: 2em;
+	font-weight: 800;
+	margin-bottom:0;
+	width:100%;
+	height: 90px;
+}
+
+
+nav.navbar-inverse .navbar-nav>.active>a.media, 
+nav.navbar-inverse .navbar-nav>.active>a.media:focus, 
+nav.navbar-inverse .navbar-nav>.active>a.media:hover {
+	opacity: 0.6;
+}
+
+ul.nav.navbar-nav.navbar-right{
+	margin: 1% auto;
+	
+}
+
+ul.nav.navbar-nav li a{
+	color: #b0bfb4;
+}
+
+
+ul.nav.navbar-nav li a:hover,
+nav.navbar-inverse .navbar-nav>li>a:focus{
+	color: #c8d9c7;	
+}
+nav.navbar-inverse .navbar-nav>li>a:focus{
+	font-size:1.2em;
+	}
+
+ul.nav.navbar-nav li a:hover{
+	border-bottom: 4px solid #c8d9c7;
+	color: #c8d9c7;	
+}
+	
+li.current-menu-item a{
+	color: #D7E4DA;   
+    font-size: 1.2em;    
+}
+.nav > li > a > img{
+	margin-top: -8%;
+}
+
+.nav > li > a > img:hover{
+	opacity:0.6;
+}
+
+
+/*--------------------------------- 
+	END OF NAVBAR
+----------------------------------- */
+/*---------------------------- start of footer -----------------------------------*/
+
+div.col-xs-12.footer{
+	text-align: center;
+	background: black;
+	padding: 0.5%;
+	height: 40px;
+}
+
+p.footerText{
+	color: white;
+	font-size: 1.1em;
+	margin-top:0.5%;
+}
+
+
+/*---------------------------- end of footer -----------------------------------*/
+
+
+
+
+/*------------------------------- start of home page -------------------------------*/
+.intro-section {
+	/*
+    text-align: center;
+    margin: 0% 0% -2% auto;
+	position: relative;
+	background-image: url(../imgs/img-home.jpg); 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);   
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+*/
+  
+}
+
+
+div.homeText{
+    width: 55%;
+    height: auto;
+	margin: 2% 0% 19% 3%;
+    border: 6px solid white;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+}
+h1.homeHeadline{
+    margin: 5% 0% 0% 0%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+header.logo img{
+	max-width: 40%;
+	height: auto;
+}
+
+p.homeText{
+    margin: 6% 0% 0% 0%;
+}
+
+
+
+h1.homeHeadline,
+p.homeText{
+    color: #fff;
+    text-align: center;
+    font-size: 6em;
+}
+
+/*---------------------------- end of home page -----------------------------------*/
+
+
+/*---------------------------- start of services page -----------------------------------*/
+
+
+
+.services-section {
+    height: 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #b0bfb4;
+
+}
+
+	
+div.col-xs-12.service-widget-background{
+	background: black;
+	height: auto;
+}
+
+
+div.col-xs-12.services-widget figure img {
+	border: 6px white solid;
+	border-radius: 100%;
+	margin: 5% 0% 0% 0%;
+	background: black;
+}
+
+			
+div.col-xs-10.col-xs-offset-1.serviceInfo{
+	font-size: 2em;
+	text-align: justify;	
+	padding: 0% 0% 2% 0%;	
+}
+
+
+h1.service-name{
+	font-size: 2.5em;
+	font-weight: 800;
+	padding-top: 1%;
+}
+
+div.textwidget{
+	font-size: 1.8em;
+	text-align: justify;
+	padding: 0% 5%;
+}
+
+h1.serviceH1{
+	margin: 2% 0% 1% 0%;
+	font-weight: 800;
+}
+
+div.col-xs-10.col-xs-offset-1.serviceInfo p{
+	font-size: 1.1em;
+}
+
+h1.serviceH1,
+h1.service-name,
+div.col-xs-10.col-xs-offset-1.serviceInfo p,
+div.textwidget{
+	color: white;
+}
+
+
+/*------- modal ---------*/	
+
+
+/* body */
+div.modal-body,
+div.modal-footer,
+div.modal-header{
+	background: #9ca6a0;
+	font-style: normal;
+}
+
+div.modal-body,
+div.modal-header{
+	color: white;
+}
+	
+
+div.modal-header{
+	font-weight: 800;
+	border: none;
+}
+
+
+/* text */
+div.modal-dialog div.textwidget p,
+div.modal-dialog div.textwidget ul,
+div.modal-dialog div.textwidget ol {
+	margin: 2% 4% 0% -4%;
+}
+
+div.modal-dialog div.textwidget ul,
+div.modal-dialog div.textwidget ol{
+	font-size: 0.9em;
+}
+
+h4.modal-title{
+	font-size: 2.3em;
+	font-weight: 800;
+	margin-top:-7%;
+	text-align: left;
+}
+
+
+
+.btn1.btn-md.btn-default{
+	float: right;
+	clear: left;
+	margin: 2% 7% 15% 0%;
+	background: #b0bfb4;
+	color: white;
+	text-shadow: none;
+	font-size: 1.3em;
+	padding: 0.5%;
+	border: 1px solid #9ca6a0;
+	-webkit-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+	box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+
+}
+
+.btn1.btn-md.btn-default:hover{
+	background: #c8d9c7;
+	text-decoration: none;
+	box-shadow: none;
+}	
+
+a.contactModal,
+a.phoneModal{
+	float: left;
+	font-size: 2em;
+	color: white;
+	margin: 2% 3% 0% 3%;		
+}
+
+a.contactModal:hover,
+a.contactModal:focus,	
+a.phoneModal:hover,
+a.phoneModal:focus{
+	color: #6c6f73;
+	
+}
+
+div.modal-header button.close{
+	margin-top: -18px;
+	font-size: 3em;	
+}
+
+div.modal-footer a.fbModal img.icon-fb{
+	float:left;
+	width: 9%;
+	border:none;
+	margin: 0%;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 2px solid #fff;
+}
+
+div.modal-footer a.fbModal img.icon-fb:hover{
+	opacity: 0.6;	
+}
+	
+
+div.modal-backdrop{
+	z-index: 0;
+}
+
+
+/*------- end of modal -------------*/
+
+/*---------------------------- end of services page -----------------------------------*/
+
+/*---------------------------- start of photo gallery -----------------------------------*/
+
+
+div.col-xs-12.photoGallery h1{
+	font-weight: 800;
+	font-size: 4.5em;
+	margin-bottom: 5%;  
+	margin-top: 4%;
+	color: white;
+}
+
+div.col-xs-12.col-md-8.col-md-offset-2.photoGallery {
+	text-align:center;
+}
+
+
+
+/*---------------------------- end of photo gallery -----------------------------------*/
+
+
+/*---------------------------- start of about page -----------------------------------*/
+.about-section {
+	margin-bottom: 3%;
+    /*text-align: center;
+    overflow: auto;    
+    background-image: url(../imgs/img-about.jpg); 
+    margin: 0 auto; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);   
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; */
+}
+
+
+div.aboutContainer{   
+ 
+    border: 6px solid white;
+    padding: 0% 5%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 3% 2% 0% 0%;
+    height: auto;
+
+}
+
+h1.aboutHeadline{
+	font-size: 4em;
+	font-weight: 800;
+}
+
+h1.aboutHeadline,
+div.aboutContainer p{
+	color: white;
+}
+
+div.aboutContainer p{
+	font-size: 2em;
+	text-align: justify;
+}
+
+
+
+/*---------------------------- end of about page -----------------------------------*/
+
+/*---------------------------- start of contact page -----------------------------------*/
+
+
+div.topContent,
+div.sectionContent{
+	padding: 1% 5%;
+	/*background:#c8d9c7;*/
+	background: #b0bfb4;
+	height: auto;
+}
+
+
+
+div.sectionContent{
+	background: #9ca6a0;
+	color:white;
+	height: 850px;
+	margin-top: -5.5%;
+
+}
+
+div.topContent h1{
+    color: white;
+	font-weight: 800;
+	font-size: 4em;
+	text-align: center;
+	margin-top: 0%;
+	margin-bottom: 6%;
+}
+
+hr.contact{
+	border-bottom: 2px dotted black;
+	border-top: none;
+}
+
+div.wpcf7-mail-sent-ok{
+	border: none;
+}
+
+div.wpcf7{
+	margin-top: 5%;
+}
+
+input{
+	height: 45px;
+	padding: 1%;
+}
+
+input[type="submit"]{
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	margin: -9% 0% 2% 25%;
+	position: absolute;
+	font-size: 1.5em;
+}
+
+input[type="submit"]:hover{
+	color: #9ca6a0;
+	border: 4px solid #9ca6a0;
+	background: #CFDFCE;
+}
+
+input,
+textarea{
+	background: #c8d9c7;
+	border: 4px solid white;
+	width: 65%;
+}
+
+div.contactContent.col-md-9.col-md-offset-2.col-xs-12{
+	text-align: center;
+	margin: 2% 0% 0% 12%;
+}
+
+div.contactContent.col-md-9.col-md-offset-2.col-xs-12 p{
+	font-size: 2em;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+/*---------------------------- end of contact page -----------------------------------*/
+
+
+/*---------------------------- start of media page -----------------------------------*/
+
+
+div.col-xs-12.widgetContainer{
+	width: 1000px;
+	height: 300px;
+}
+
+/*
+.media-section {
+    height: auto;
+    text-align: center;
+    background-image: url(../imgs/img-media.jpg); 
+    margin: 0 auto; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);	background-image: url(../imgs/img-media.jpg); 
+    margin: 0 auto; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 3% 0;    
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;   
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+*/
+
+div.section1.col-lg-4.col-lg-offset-2.col-md-6,
+div.section2.col-md-6{
+	margin-top: 3%;
+}
+
+
+div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+	margin-top: 4%;
+	margin-left: 28%;
+	
+
+}
+
+.timeline,
+.fb_iframe_widget,
+div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+	opacity: 0.9;
+}
+
+
+/*---------------------------- end of media page -----------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- START OF MEDIA QUERIES ------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*------------ START OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
+@media only screen and (min-width: 75.000em) and (max-width: 93.750em) {
+	
+	
+	
+	/*------------------------ START OF NAVBAR -------------------------*/
+		
+	div.navbar-header.page-scroll{
+		width: 30%;
+	}
+		
+	nav.navbar-inverse{
+		font-size: 1.6em;
+		height: 65px;
+	}
+	
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -6%;
+	}
+	
+	ul.nav.navbar-nav.navbar-right{
+		margin:  0.5% auto;
+	}
+	
+	ul.nav.navbar-nav li a:hover{
+		border-bottom: 3px solid #c8d9c7;
+	}	
+	
+	/*------------------------ END OF NAVBAR -------------------------*/	
+	
+	/*------------------------ START OF HOME PAGE -------------------------*/
+	h1.homeHeadline,
+	p.homeText{
+	    font-size: 4em;
+	}
+	
+	div.homeText{
+		margin: 2% 0% 17% 3%;
+	}
+	/*------------------------ END OF HOME PAGE -------------------------*/
+	/*------------------------ START OF SERVICES PAGE -------------------------*/	
+	.btn1.btn-md.btn-default{
+		font-size: 1em;
+	
+	}		
+	div.col-xs-10.col-xs-offset-1.serviceInfo{
+		font-size: 1.4em;
+	}
+		
+	div.col-xs-12.service-widget-background{
+		background: black;
+		height: auto;
+	}
+	
+	p.service-info{
+		font-size: 1.1em;
+	}
+	
+	h1.service-name{
+		font-size: 2em;
+	}
+	
+	h1.serviceH1{
+		font-size: 2.2em;
+	}
+	
+	div.col-xs-12.col-md-4.services-widget1,
+	div.col-xs-12.col-md-4.services-widget2,
+	div.col-xs-12.col-md-4.services-widget3{
+		margin-top: -0.5%;
+	}
+	
+	a.btn-default{
+		font-size: 1em;
+	}
+		
+	/*------------------------ END OF SERVICES PAGE -------------------------*/	
+	/*------------------------ START OF PHOTO GALLERY PAGE -------------------------*/
+	div.col-xs-12.photoGallery h1{
+		font-size: 3.5em;
+	}
+	
+	
+	div.textwidget{
+		font-size: 1.5em;
+	}
+	/*------------------------ START OF PHOTO GALLERY PAGE -------------------------*/	
+	
+	h1.aboutHeadline{
+		font-size: 3em;
+		font-weight: 800;
+	}
+
+
+	div.aboutContainer p{
+		font-size: 1.5em;
+		text-align: justify;
+	}
+
+	/*------------------------ END OF ABOUT ME PAGE -------------------------*/	
+	/*------------------------ START OF CONTACT PAGE -------------------------*/		
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12 p	{
+		font-size: 1.8em;
+	}
+	
+	input[type="submit"]{
+		margin: -12% 0% 2% 22%;
+	}
+	/*------------------------ END OF CONTACT PAGE -------------------------*/		
+	/*------------------------ START OF MEDIA PAGE -------------------------*/		
+		
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-left : 22%;
+	}
+	/*------------------------ END OF MEDIA PAGE -------------------------*/		
+
+}
+
+/*------------ END OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
+
+/*------------ START OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
+
+@media only screen and (min-width: 62.000em) and (max-width: 74.938em) {
+	
+		/*------------------------------- start of background image -------------------------------*/		
+	body.custom-background{
+		background-size: initial;
+	}
+	/*------------------------------- end of background image -------------------------------*/	
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+	ul.nav.navbar-nav{
+		font-size: 0.7em;
+	}	
+	
+	ul.nav.navbar-nav.navbar-right{
+		margin: 1.5% -5%;
+	}
+
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -6%;
+	}
+	
+	nav.navbar-inverse{
+		height: 82px;
+	}
+	
+	img.logo{	
+		max-width: 350px;
+		height: auto;
+	}
+	
+	
+	/*------------------------------- end of navbar -------------------------------*/		
+	/*------------------------------- start of home page -------------------------------*/
+	div.homeText{
+		margin: 2% 0% 2% 3%;
+	}
+		
+	section#intro{
+		background-size: initial;
+		padding-bottom: 26%;
+	}
+	
+	h1.homeHeadline{
+	    font-size: 4em;
+	}
+	
+	p.homeText{
+	    font-size: 3em;
+	}
+
+	/*---------------------------- end of home page -----------------------------------*/
+	/*------------------------------- start of services page -------------------------------*/
+	.btn1.btn-md.btn-default{
+		font-size: 1em;
+	}
+	
+	div.col-xs-12.service-widget-background{
+		height: auto;
+		padding-bottom: 2%;
+	}
+	
+	div.col-xs-12.col-md-4.services-widget figure.img-rounded.service-img img{
+		border: 2px solid white;
+		width: 90%;
+		height: 90%;
+	}
+	
+	h1.serviceH1{
+	
+		margin-top: 3%;
+				
+	}
+
+	
+	p.service-info{
+		font-size: 1.1em;
+	}
+	
+	p.serviceText{
+		font-size: 0.7em;
+	}
+	
+	div.col-xs-10.col-xs-offset-1.serviceInfo{
+		padding: 0%;
+	}
+	/*------------------------------- end of services page -------------------------------*/
+	
+	/*------------------------------- start of photo gallery page -------------------------------*/
+	div.col-xs-12.photoGallery h1{
+		font-size: 3em;
+	}
+	/*------------------------------- end of photo gallery page -------------------------------*/	
+	/*------------------------------- start of about me page -------------------------------*/	
+	h1.aboutHeadline{
+		font-size: 3em;
+	}
+	
+	
+	div.aboutContainer p{
+		font-size: 1.5em;
+	}
+	
+
+	/*------------------------------- end of about me page -------------------------------*/	
+	/*------------------------------- start of contact page -------------------------------*/	
+	input, 
+	textarea{
+		width: 100%;
+	}
+	
+	input[type="submit"]{
+		margin:-18% 0% 2% 35%;
+	}
+	
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12 p{
+		font-size: 1.8em;
+	}
+		
+	/*------------------------------- end of contact page -------------------------------*/	
+	/*------------------------------- start of media page -------------------------------*/	
+
+	
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-top: 4%;
+		margin-left: 0%;
+		text-align: center;
+
+	}
+	/*------------------------------- end of media page -------------------------------*/	
+	
+	
+}
+
+/*------------ END OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
+/*------------ START OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
+
+@media only screen and (min-width: 48.000em) and (max-width: 61.938em) {
+	
+	
+	/*------------------------------- start of background image -------------------------------*/		
+	
+	body.custom-background{
+		background-size: initial;		
+	}
+	
+	body.custom-background.page-template-page-about-php{
+		background-position: initial;
+	}
+
+	/*------------------------------- end of background image -------------------------------*/		
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+
+	
+	ul.nav.navbar-nav{
+		font-size: 0.6em;
+		margin-right: 8%;
+		margin-top: 0%;
+	}	
+	
+
+
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -6%;
+	}
+	
+	ul.nav.navbar-nav.navbar-right{
+		margin: 1% -8%;
+	}
+	
+	nav.navbar-inverse{
+		width: 100%;
+		font-size: 1.2em;
+		margin: 0%;
+	}
+	
+	
+	img.logo{	
+		max-width: 300px;
+		height: auto;
+		margin-top: 0%;
+	
+	}
+
+	
+	/*------------------------------- end of navbar -------------------------------*/	
+		
+	/*------------------------------- start of home page -------------------------------*/
+	div.homeText{
+		margin: 92% 0% 3% 0%;
+		border: none;
+		background: black;
+		width: 100%;
+	}
+	
+	.intro-section{
+		background-size: initial;
+		padding-bottom: 0;
+	}
+	
+	h1.homeHeadline{
+	    font-size: 4em;
+	}
+	
+	header.logo img{
+		display:none;
+	}
+	
+	p.homeText{
+	    font-size: 3em;
+	}
+
+
+	/*---------------------------- end of home page -----------------------------------*/
+
+	/*------------------------------- start of services page -------------------------------*/
+
+	div.col-xs-12.service-widget-background{
+		height: auto;
+		padding-bottom: 2%;
+	}
+	
+	div.col-xs-12.services-widget1 img, 
+	div.col-xs-12.services-widget2 img, 
+	div.col-xs-12.services-widget3 img{
+		border: 2px solid white;
+	}
+	
+	h1.serviceH1{
+		margin-top: 4%;
+				
+	}
+
+	p.service-info{
+		font-size: 1.1em;
+	}
+	
+	p.serviceText{
+		font-size: 0.7em;
+	}
+	
+	div.col-xs-10.col-xs-offset-1.serviceInfo{
+		padding: 0%;
+	}
+	
+	section.container-fluid.services-section{
+		
+	}
+	/*------------------------------- end of services page -------------------------------*/
+	/*------------------------------- start of photo gallery page -------------------------------*/	
+	div.col-xs-12.photoGallery h1{
+		font-size: 3.5em;
+	}
+	/*------------------------------- end of photo gallery page -------------------------------*/	
+	/*------------------------------- start of contact page -------------------------------*/	
+
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12{
+		margin: 3% 0% 0% 0%;
+	}
+	
+	input, 
+	textarea{
+		width: 100%;
+	}
+	
+	input[type="submit"]{
+		width: 150px;
+		height: 150px;
+		margin: -21% 0% 2% 32%;
+	}
+	/*------------------------------- end of contact page -------------------------------*/	
+	
+	/*------------------------------- start of media page -------------------------------*/	
+
+	
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-top: 4%;
+		margin-left: 4%;
+		text-align: center;
+		width: 700px;
+
+	}
+	
+	div.section1.col-lg-4.col-lg-offset-2.col-md-6, 
+	div.section2.col-md-6{
+		text-align:center;
+	}
+	
+	
+	/*------------------------------- end of media page -------------------------------*/	
+	
+}
+/*------------ END OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
+
+/*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6, iphone6+)-------------*/
+
+@media only screen and (min-width: 20.000em) and (max-width: 47.938em) {
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+	a.navbar-brand{
+		position: relative;
+	}	
+	
+	li.navLink.media{
+		padding: 3%;
+	}
+	
+	ul.nav.navbar-nav{
+		font-size: 0.6em;
+		margin-right: -18%;
+		margin-top: 0%;
+	}	
+	
+	.navbar-nav > li{
+		margin: 0% -30% 0% 30%; 
+	}
+
+	nav.navbar-inverse{
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	img.logo{	
+		height: auto;
+		position: absolute;
+	}
+	
+	.navbar-toggle{
+		float: left;
+	}
+	
+	div.navbar-collapse.collapse li,
+	div.navbar-collapse.collapse.in {
+		float: left;
+		margin: 0;
+	}
+					
+	/*------------------------------- end of navbar -------------------------------*/	
+	/*------------------------------- start of home page -------------------------------*/	
+	div.homeText{
+		border: none;
+		background: rgba(0, 0, 0, 0.3);
+		width: 106%;
+	}
+	
+	header.logo img{
+		display:none;
+	}
+		
+	/*------------------------------- end of home page -------------------------------*/
+	
+	/*------------------------------- start of services page -------------------------------*/
+	.btn1.btn-md.btn-default{
+		font-size: 1em;
+		float:none;
+		margin: 0% -6%;
+		width: 85%;
+	}
+	
+	div.col-xs-12.service-widget-background{
+		height: auto;
+		padding-bottom: 5%;
+	}
+	
+	div.col-xs-12.services-widget1 img, 
+	div.col-xs-12.services-widget2 img, 
+	div.col-xs-12.services-widget3 img{
+		border: 2px solid white;
+		width: 30%;
+	}
+	
+
+	
+	h1.serviceH1{
+		margin-top: 3%;
+	}
+	
+	h1.service-name{
+		font-size: 1.8em;
+	}
+	
+	p.service-info{
+		font-size: 1.1em;
+	}
+		
+	div.col-xs-10.col-xs-offset-1.serviceInfo{
+		padding: 0%;
+		font-size: 1.3em;
+	}
+		
+	/*------------------------------- end of services page -------------------------------*/	
+	
+	/*----------------- start of contact page ------------------*/
+	div.topContent h1{
+		font-size: 2em;
+	}
+
+    /*----------------- end of contact page ------------------*/	
+    
+    	
+	div#wpbgallery_container{
+		margin-bottom: 5%;
+	}
+
+    
+	
+		
+/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
+
+
+/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
+	
+/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
+
+
+
+/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
+
+/*-------------------------------  (iphone6, iphone6+, landscape)  -------------------------------*/	
+	
+
+		
+	
+/*-------------------------------  (iphone6, iphone6+, landscape)-------------------------------*/		
+	
+	/*------------ start of front page ------------*/	
+	
+	
+	/*------------ end of front page ------------*/
+	
+
+
+	/*------------ start of header  ---------------*/
+	
+
+	/*------------ end of header  ---------------*/	
+	
+	/*------------ start of header  ---------------*/	
+		
+
+		
+	/*------------ end of header  ---------------*/		
+	
+	/*------------ start of portfolio page  ---------------*/		
+
+	/*------------ end of portfolio page  ---------------*/	
+	
+
+    /*----------------- start of footer ------------------*/
+        
+
+    
+    /*----------------- end of footer ------------------*/	
+    
+    /*----------------- start of contact page ------------------*/
+	
+
+	/*----------------- end of contact page ------------------*/ 
+
+	
+}
+
+/*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6)-------------*/
+
+/*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 415px ( iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
+
+@media only screen and (min-width: 20.000em) and (max-width: 25.938em) {
+	
+	body.custom-background{
+		background-size: cover;
+	}
+	
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+	a.navbar-brand{
+
+		margin: 0 20%;
+	}
+	
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -3%;
+		margin-left: -5%;
+	}
+	
+	img.logo{	
+		max-width: 250px;
+	}
+	
+	ul.nav.navbar-nav li a:hover{
+		border-bottom: none;
+	}
+		
+	/*------------------------------- end of navbar -------------------------------*/		
+	/*------------------------------- start of footer -------------------------------*/	
+	div.col-xs-12.footer{
+		height: 30px;
+	}	
+	p.footerText{
+		font-size: 0.8em;
+		margin-top: 1%;
+	}
+	
+	/*------------------------------- end of footer -------------------------------*/		
+	/*------------------------------- start of home page -------------------------------*/
+
+
+	div.homeText{
+		margin: 0% 0% 30% -7%
+	}
+	
+	.intro-section{
+		background-size: 100% 80%;
+		padding-bottom: 68%;
+	}
+	
+	h1.homeHeadline{
+	    font-size: 2.5em;
+	}
+	
+	p.homeText{
+	    font-size: 1.8em;
+	}
+	
+	/*---------------------------- end of home page -----------------------------------*/
+
+
+    /*----------------- start of services page------------------*/    
+
+	div.col-xs-12.services-widget figure img{
+		width: 100%;
+		height: auto;
+		margin-top: 15%;
+	}
+	
+	div.textwidget{
+		font-size: 1.1em;
+	}
+	
+	div.modal-footer a.fbModal img.icon-fb{
+		width: 15%;
+	}
+    /*----------------- end of services page------------------*/   
+    
+    /*----------------- start of photo gallery page ------------------*/
+    
+    div.col-xs-12.photoGallery h1{
+	    font-size: 2.5em;
+	    margin-top: 10%;
+	}
+	/*----------------- end of photo gallery page ------------------*/
+
+	
+	/*----------------- start of about page ------------------*/
+
+	h1.aboutHeadline{
+		font-size: 2em;
+	}
+	
+	div.aboutContainer p{
+		font-size: 1.2em;
+	}
+	
+	div.aboutContainer{
+		margin: 10% 2% 0% 0%;
+	}
+
+	 
+	/*----------------- end of about page ------------------*/   
+
+	/*------------------------------- start of contact page -------------------------------*/	
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12 p{
+		font-size: 1.6em;
+	}
+	div.topContent h1{
+		font-size: 3em;
+	}
+	
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12{
+		margin: 3% 0% 0% 0%;
+	}
+	
+	input, 
+	textarea{
+		width: 100%;
+	}
+	
+	input[type="submit"]{
+		width: 100%;
+		height: auto;
+		margin: 2% 0 0 0;
+		border-radius: 0%;
+		font-size: 1.3em;
+		position: inherit;
+		
+	}
+	/*------------------------------- end of contact page -------------------------------*/	    		 
+	/*------------------------------- start of media page -------------------------------*/	
+
+	
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-top: 4%;
+		margin-left: 2%;
+		text-align: center;
+		width: 300px;
+
+	}
+	
+	div.section1.col-lg-4.col-lg-offset-2.col-md-6, 
+	div.section2.col-md-6{
+		text-align:center;
+	}
+	
+	
+	/*------------------------------- end of media page -------------------------------*/	
+}
+
+/*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 415px (iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
+
+
+/*------------ START OF MIN-WIDTH 416px and MAX-WIDTH 568px ( iphone4, iphone5 landscape)-------------*/
+
+@media only screen and (min-width: 26.000em) and (max-width: 35.500em) {
+	
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+	a.navbar-brand{
+		margin: -48% 0% 15% 90%;
+	}
+	
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -6%;
+		margin-left: -4%;
+	}
+	
+	img.logo{	
+		max-width: 300px;
+	}
+	
+	button.navbar-toggle.collapsed{
+		float: none;
+		margin-left: 27%;
+	}
+		
+	
+
+	
+	/*------------------------------- end of navbar -------------------------------*/		
+	/*------------------------------- start of footer -------------------------------*/	
+	div.col-xs-12.footer{
+		height: 30px;
+	}	
+	p.footerText{
+		font-size: 0.8em;
+		margin-top: 1%;
+	}
+	
+	/*------------------------------- end of footer -------------------------------*/		
+	/*------------------------------- start of home page -------------------------------*/
+	div.homeText{
+		margin:0% 0% 20% -3%;
+	}
+
+	.intro-section{
+		background-size: 100%;
+		padding-bottom: 3%;
+	}
+	
+	h1.homeHeadline{
+	    font-size: 2.5em;
+	}
+	
+	p.homeText{
+	    font-size: 2em;
+	    margin-top: -3%;
+	}	
+	
+	
+	/*----------------- start of about page ------------------*/
+	.about-section{
+		background-size: inherit;
+	}	
+	
+	p.aboutText{
+		font-size: 1.3em;
+	}
+
+	
+	/*----------------- end of about page ------------------*/ 		
+	/*----------------- start of contact page ------------------*/
+
+	div.textwidget{
+		font-size: 1.3em;
+	}
+	
+	div.modal-dialog div.textwidget p, 
+	div.modal-dialog div.textwidget ul, 
+	div.modal-dialog div.textwidget ol{
+		font-size: 0.8em;
+	}
+	
+	div.col-xs-12.services-widget figure img{
+		width: 60%;
+		height: auto;
+	}
+
+    /*----------------- end of contact page ------------------*/
+    
+    /*----------------- start of photo gallery page ------------------*/
+    
+    div.col-xs-12.photoGallery h1{
+	    font-size: 2.5em;
+	    margin-top: -14%;
+	}
+	/*----------------- end of photo gallery page ------------------*/
+     
+    
+	/*----------------- start of about page ------------------*/
+	
+	h1.aboutHeadline{
+		font-size: 2.5em;
+	}
+	
+	div.aboutContainer p{
+		font-size: 1.3em;
+	}
+	
+	/*----------------- end of about page ------------------*/ 	
+
+    
+	/*------------------------------- start of contact page -------------------------------*/	
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12 p{
+		font-size: 1.6em;
+	}
+	div.topContent h1{
+		font-size: 3em;
+	}
+	
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12{
+		margin: 3% 0% 0% 0%;
+	}
+	
+	input, 
+	textarea{
+		width: 90%;
+	}
+	
+	input[type="submit"]{
+		width: 105px;
+		height: 105px;
+		margin: -21% 0% 2% 28%;
+	}
+	/*------------------------------- end of contact page -------------------------------*/	     
+	/*------------------------------- start of media page -------------------------------*/	
+
+	
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-top: 4%;
+		margin-left: 2%;
+		text-align: center;
+		width: 450px;
+
+	}
+	
+	div.section1.col-lg-4.col-lg-offset-2.col-md-6, 
+	div.section2.col-md-6{
+		text-align:center;
+	}
+	
+	
+	/*------------------------------- end of media page -------------------------------*/	    
+		
+}
+
+/*------------ END OF MIN-WIDTH 416px and MAX-WIDTH 568px (iphone4, iphone5 landscape)-------------*/
+
+/*------------ START OF MIN-WIDTH 569px and MAX-WIDTH 737px ( iphone6, iphone6+ landscape)-------------*/
+
+@media only screen and (min-width: 35.563em) and (max-width: 46.063em) {
+
+	/*------------------------------- start of background image -------------------------------*/		
+
+	/*------------------------------- end of background image -------------------------------*/		
+	
+	/*------------------------------- start of navbar -------------------------------*/	
+	a.navbar-brand{
+		margin: -34% 0% 17% 90%;
+	}
+	
+	.nav > li > a > img{
+		width: 80%;
+		height: auto;
+		margin-top: -6%;
+	}
+	
+	img.logo{	
+		max-width: 300px;
+	}
+	
+	button.navbar-toggle.collapsed{
+		float: none;
+		margin-left: 27%;
+	}
+		
+	div.navbar-collapse.collapse.in{
+		width: 100%;
+	}
+	
+	ul.nav.navbar-nav.navbar-right{
+		width: 100%;
+		margin: 2% 10%;
+	}
+	
+	/*------------------------------- end of navbar -------------------------------*/	
+	/*------------------------------- start of footer -------------------------------*/	
+	div.col-xs-12.footer{
+		height: 30px;
+	}	
+	
+	/*------------------------------- end of footer -------------------------------*/		
+	/*------------------------------- start of home page -------------------------------*/
+	div.homeText{
+		margin:0% 0% 20% -3%;
+	}
+
+	.intro-section{
+		background-size: 100%;
+		padding-bottom: 0;
+	}
+	
+	h1.homeHeadline{
+	    font-size: 3em;
+	}
+	
+	p.homeText{
+	    font-size: 2.5em;
+	    margin-top: 2%;
+	}
+
+	/*---------------------------- end of home page -----------------------------------*/	
+	/*----------------- start of about page ------------------*/
+	h1.aboutHeadline{
+		font-size: 3em;
+	}
+	
+	div.aboutContainer p{
+		font-size: 1.5em;
+	}
+	
+	/*----------------- end of about page ------------------*/ 		
+	/*----------------- start of services page ------------------*/
+	div.topContent h1{
+		font-size: 3em;
+	}
+
+
+	div.textwidget{
+		font-size: 1.5em;
+	}
+    /*----------------- end of services page ------------------*/
+    
+    /*----------------- start of photo gallery page ------------------*/
+    
+    div.col-xs-12.photoGallery h1{
+	    font-size: 3em;
+	    margin-top: 5%;
+	}
+	/*----------------- end of photo gallery page ------------------*/
+    
+	/*------------------------------- start of contact page -------------------------------*/	
+
+	div.contactContent.col-md-9.col-md-offset-2.col-xs-12{
+		margin: 3% 0% 0% 0%;
+	}
+	
+	input, 
+	textarea{
+		width: 100%;
+	}
+	
+	input[type="submit"]{
+		width: 120px;
+		height: 120px;
+		margin:-18% 0% 2% 35%;
+	}
+	/*------------------------------- end of contact page -------------------------------*/	     
+	/*------------------------------- start of media page -------------------------------*/	
+
+	
+	div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
+		margin-top: 4%;
+		margin-left: 2%;
+		text-align: center;
+		width: 650px;
+
+	}
+	
+	div.section1.col-lg-4.col-lg-offset-2.col-md-6, 
+	div.section2.col-md-6{
+		text-align:center;
+	}
+	
+	
+	/*------------------------------- end of media page -------------------------------*/	    
+	
+}
+
+/*------------ END OF MIN-WIDTH 569px and MAX-WIDTH 737px ( iphone6, iphone6+ landscape)-------------*/
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- START OF MEDIA QUERIES ------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
