@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Static Age</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />   
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />            
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>	
+		<nav class="navbar navbar-inverse ">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img class="logo" src="imgs/logo.png">
+					</a>
+				</div>
+					
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+					<ul class="nav navbar-nav navbar-right">
+						<li class="navLink active">
+							<a class="navLink" href="#">Link1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="navLink">
+							<a class="navLink" href="#">Link2</a>
+						</li>
+						<li class="navLink">
+							<a class="navLink" href="#">Link3</a>
+						</li>
+						<li class="navLink">
+							<a class="navLink" href="#">Link4</a>
+						</li>				
+						<li class="navLink media">
+			                <a class="media" href="#">
+			                    <img src="imgs/mediaBtn-fb.png">
+			                    <img src="imgs/mediaBtn-twitter.png">
+			                    <img src="imgs/mediaBtn-pinterest.png">	                        
+			                </a>
+			            </li>
+					</ul>
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+	    <!-- Media Section -->
+	    <section id="media" class="media-section">
+	        <div class="container-fluid">
+	            <div class="row">
+	                <div class="col-xs-12">
+			            <div class="row">
+			                <div class="col-md-6">
+				                <a class="twitter-timeline" href="https://twitter.com/rdecojewelry" data-widget-id="581191998373253120">Tweets by @rdecojewelry					               								</a>
+			                </div>	
+			                	    
+			                <div class="col-md-6">
+	                            <div class="fb-like-box" data-href="https://www.facebook.com/rdecojewelry" data-width="325" data-height="275" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div></div>
+	    					</div>
+	    					
+			                <div class="col-xs-12 widgetContainer">		
+<a data-pin-do="embedUser" href="http://www.pinterest.com/rdecojewelry/" data-pin-scale-width="80" data-pin-scale-height="320" data-pin-board-width="900">Visit R.Deco Jewelry's profile on Pinterest.</a>				
+			                </div>		            
+			            </div>
+	                </div>	                
+	            </div>	            	   
+	        </div>
+	    </section>
+		<!-- Footer Section -->	
+	    <footer class="container-fluid"> 
+	        <div class="row">    			        
+	            <div class="col-xs-12 footer">
+	                <p class="footerText"> © R.Deco Designs <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> 2015 All Rights Reserved		                
+	                </p>
+		        </div>	<!-- .col-xs-12 .footer -->
+	        </div> <!-- .row -->
+	    </footer> <!-- .container-fluid -->
+	    
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- twitter widget -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		
+		<!-- facebook widget -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		<!-- pinterest widget -->
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		
+	</body>
+</html> 
