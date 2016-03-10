@@ -5,13 +5,6 @@
         <div class="index col-xs-12">
             <div id="headerIntro" class="homeText">
 
-                <header class="logo">
-		            <?php
-		                if ( has_post_thumbnail() ) {
-							the_post_thumbnail();
-						} 
-		            ?>
-                </header>
 
                 <h1 class="homeHeadline">
 	                <?php
@@ -22,6 +15,15 @@
 	                    }
 	                ?>
                 </h1>
+                
+   
+                <div class="logo">
+		            <?php
+		                if ( has_post_thumbnail() ) {
+							the_post_thumbnail();
+						} 
+		            ?>
+                </div>             
                                 
                 <p class="homeText">
 	                <?php
