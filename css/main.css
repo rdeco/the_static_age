@@ -1,133 +1,136 @@
 
 /*------------ SITE INFO -------------
-
-fonts:
-------
-font-family: 'Josefin Sans', sans-serif;
-
-colors:
--------
-
-#6c6f73 | rgb(108,111,115)
-#848b8c | rgb(132,139,140)
-#9ca6a0 | rgb(156,166,160)
-#b0bfb4 | rgb(176,191,180)
-#c8d9c7 | rgb(200,217,199)
+	
+Theme name: The Static Age	
 
 
-----------------------------------------*/
-*{
-	font-family: 'Josefin Sans', sans-serif;
-}
+/* COLORS *************************************************************
 
-html,body{
-    height: auto;
-}
+dark grey		   -> #1C1D21 • rgb(28, 29, 33);
+gunmetal	       -> #2a2d33 • rgb(42, 45, 51);  
+teal	   		   -> #08605F • rgb(8, 96, 95); 
+wedgewood blue 	   -> #729EA1 • rgb(114, 158, 161);    
+creamy green       -> #B0BFB4 • rgb(176, 191, 180);      
+
+***********************************************************************/
+
+/* FONTS **************************************************************	
+
+sans-serif	-> font-family: 'Josefin Sans', sans-serif;
+accent:		-> font-family: 'Oswald', sans-serif;
+
+************************************************************************/
+
+/* Image Sizes **************************************************************	
+
+category header images -> 960px x 300px;
+
+************************************************************************/
+
 
 body.custom-background{
 	background-size: 100%;
 
 }
 
-/*--------------------------------- 
-	START OF NAVBAR
------------------------------------ */
+/*-----------------------------------------------  START OF NAVBAR ------------------------------------------------- */
 
-
-div.navbar-header{
-	display: inline-block;
-	width: 25%;
+nav.navbar.navbar-inverse{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c3c3c+0,1c1d21+100 */
+	background: rgb(60,60,60); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(60,60,60,1) 0%, rgba(28,29,33,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(60,60,60,1) 0%,rgba(28,29,33,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(60,60,60,1) 0%,rgba(28,29,33,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#1c1d21',GradientType=0 ); /* IE6-9 */
+	height:80px;
 }
 
-a.navbar-brand{
-	margin-top: -5%;
+a.navbar-brand img:hover,
+ul.nav.navbar-nav.navbar-right li:nth-last-child(1):hover{
+		-webkit-transform: scale3d(0.9, 0.9, 1);
+	transform: scale3d(0.9, 0.9, 1);
+		-webkit-transition: -webkit-transform 0.7s;
+	transition: transform 0.7s;
 }
 
-li.navLink{ 
-	margin-top: 0%;
-}
 
-a.navLink{
-	margin-top: 20%;
-}
-
-img.logo{
-	max-width: 100%;
-	height: auto;
+ul.nav.navbar-nav.navbar-right li {
 	margin-top: 2%;
-	margin-left: 1%;
 }
 
-nav.navbar-inverse{
-	background: black;
-	background-image: none;
-	font-size: 2em;
-	font-weight: 800;
-	margin-bottom:0;
-	width:100%;
-	height: 90px;
+ul.nav.navbar-nav.navbar-right li:nth-last-child(1){
+	margin-top: 0;
 }
 
-
-nav.navbar-inverse .navbar-nav>.active>a.media, 
-nav.navbar-inverse .navbar-nav>.active>a.media:focus, 
-nav.navbar-inverse .navbar-nav>.active>a.media:hover {
-	opacity: 0.6;
-}
-
-ul.nav.navbar-nav.navbar-right{
-	margin: 1% auto;
-	
-}
-
-ul.nav.navbar-nav li a{
-	color: #b0bfb4;
-}
-
-
-ul.nav.navbar-nav li a:hover,
-nav.navbar-inverse .navbar-nav>li>a:focus{
-	color: #c8d9c7;	
-}
-nav.navbar-inverse .navbar-nav>li>a:focus{
-	font-size:1.2em;
-	}
-
-ul.nav.navbar-nav li a:hover{
-	border-bottom: 4px solid #c8d9c7;
-	color: #c8d9c7;	
-}
-	
-li.current-menu-item a{
-	color: #D7E4DA;   
-    font-size: 1.2em;    
-}
-.nav > li > a > img{
-	margin-top: -8%;
-}
-
-.nav > li > a > img:hover{
-	opacity:0.6;
-}
-
-
-/*--------------------------------- 
-	END OF NAVBAR
------------------------------------ */
-/*---------------------------- start of footer -----------------------------------*/
-
-div.col-xs-12.footer{
+ul.nav.navbar-nav.navbar-right li a{
+	position: relative;
+	display: block;
+	margin: 0 1em;
+	padding: 0.75em 0;
 	text-align: center;
-	background: black;
+	color:  rgb(176, 191, 180); 
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+ul.nav.navbar-nav.navbar-right li a:hover,
+ul.nav.navbar-nav.navbar-right li a:focus {
+	color: rgb(8, 96, 95);
+}
+
+ul.nav.navbar-nav.navbar-right li.current_page_item a {
+	color: rgba(8, 96, 95, 0.85);
+}
+
+ul.nav.navbar-nav.navbar-right li a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgb(8, 96, 95);
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transition: -webkit-transform 0.1s;
+	transition: transform 0.1s;
+}
+
+ul.nav.navbar-nav.navbar-right li a:hover::before,
+ul.nav.navbar-nav.navbar-right li.current_page_item a::before{
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+
+/*------------------------------- END OF NAVBAR -------------------------------------------------- */
+
+
+/*---------------------------- start of footer ---------------------------------------*/
+
+.footer{
+	text-align: center;
+	background: rgb(28, 29, 33);
 	padding: 0.5%;
-	height: 40px;
+	height: auto;
+	width:100%;
+	position:absolute;
+	bottom:0;
 }
 
 p.footerText{
-	color: white;
+	color: rgb(176, 191, 180); 
 	font-size: 1.1em;
 	margin-top:0.5%;
+	font-family:'Josefin Sans', sans-serif;	
 }
+
 
 
 /*---------------------------- end of footer -----------------------------------*/
@@ -153,13 +156,12 @@ p.footerText{
 
 
 div.homeText{
-    width: 55%;
     height: auto;
-	margin: 2% 0% 19% 3%;
-    border: 6px solid white;
+    margin: 5% 0% 0% 0%;
     padding: 1%;
-    background: rgba(0, 0, 0, 0.5);
     text-align: center;
+    width: 50%;
+    margin: 3% 0% 0% 1%;
 }
 
 }
@@ -169,23 +171,29 @@ h1.homeHeadline{
     text-transform: uppercase;
 }
 
-header.logo img{
-	max-width: 40%;
+.logo img{
+	max-width: 200px;
 	height: auto;
 }
 
 p.homeText{
-    margin: 6% 0% 0% 0%;
+    margin-top: 3%;
 }
 
 
 
 h1.homeHeadline,
 p.homeText{
-    color: #fff;
+    color: rgb(176, 191, 180); 
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
+    font-variant: small-caps;
+    font-family: 'oswald', sans-serif;
+    letter-spacing: 4px;
 }
+
+
+
 
 /*---------------------------- end of home page -----------------------------------*/
 
@@ -1119,6 +1127,62 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	div#wpbgallery_container{
 		margin-bottom: 5%;
 	}
+
+    
+	
+		
+/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
+
+
+/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
+	
+/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
+
+
+
+/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
+
+/*-------------------------------  (iphone6, iphone6+, landscape)  -------------------------------*/	
+	
+
+		
+	
+/*-------------------------------  (iphone6, iphone6+, landscape)-------------------------------*/		
+	
+	/*------------ start of front page ------------*/	
+	
+	
+	/*------------ end of front page ------------*/
+	
+
+
+	/*------------ start of header  ---------------*/
+	
+
+	/*------------ end of header  ---------------*/	
+	
+	/*------------ start of header  ---------------*/	
+		
+
+		
+	/*------------ end of header  ---------------*/		
+	
+	/*------------ start of portfolio page  ---------------*/		
+
+	/*------------ end of portfolio page  ---------------*/	
+	
+
+    /*----------------- start of footer ------------------*/
+        
+
+    
+    /*----------------- end of footer ------------------*/	
+    
+    /*----------------- start of contact page ------------------*/
+	
+
+	/*----------------- end of contact page ------------------*/ 
+
 	
 }
 
