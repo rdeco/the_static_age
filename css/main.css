@@ -43,6 +43,7 @@ nav.navbar.navbar-inverse{
 	background: linear-gradient(to bottom,  rgba(60,60,60,1) 0%,rgba(28,29,33,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#1c1d21',GradientType=0 ); /* IE6-9 */
 	height:80px;
+	margin-bottom: 0;
 }
 
 a.navbar-brand img:hover,
@@ -116,12 +117,13 @@ ul.nav.navbar-nav.navbar-right li.current_page_item a::before{
 
 .footer{
 	text-align: center;
-	background: rgb(28, 29, 33);
+	background: rgb(42, 45, 51);
 	padding: 0.5%;
 	height: auto;
 	width:100%;
 	position:absolute;
 	bottom:0;
+	left:0;
 }
 
 p.footerText{
@@ -139,20 +141,6 @@ p.footerText{
 
 
 /*------------------------------- start of home page -------------------------------*/
-.intro-section {
-	/*
-    text-align: center;
-    margin: 0% 0% -2% auto;
-	position: relative;
-	background-image: url(../imgs/img-home.jpg); 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);   
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	background-attachment: fixed;
-*/
-  
-}
 
 
 div.homeText{
@@ -200,91 +188,133 @@ p.homeText{
 
 /*---------------------------- start of services page -----------------------------------*/
 
-
-
 .services-section {
     height: 100%;
     padding-top: 0px;
     text-align: center;
     background: #b0bfb4;
-
 }
 
+.service-H1{
+	margin: 5% auto;
+	font-family: 'Oswald', sans-serif;	
+	color: rgb(42, 45, 51);
+	font-size: 2.5em;
+}
+
+.serviceInfo p{
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 5% auto;
+    letter-spacing: 1px;
+    color: rgb(42, 45, 51);
+}
 	
 div.col-xs-12.service-widget-background{
-	background: black;
+	background: rgb(28, 29, 33);
 	height: auto;
 }
 
 
 div.col-xs-12.services-widget figure img {
-	border: 6px white solid;
-	border-radius: 100%;
-	margin: 5% 0% 0% 0%;
-	background: black;
-}
+    margin: 5% 0% 0% 0%;
+    background-color: black;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 5px 20px 0px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 5px 5px 20px 0px  rgba(0,0,0,0.6);
+    -o-box-shadow: 5px 5px 20px 0px  rgba(0,0,0,0.6);
+    border-radius: 100%;
 
-			
-div.col-xs-10.col-xs-offset-1.serviceInfo{
-	font-size: 2em;
-	text-align: justify;	
-	padding: 0% 0% 2% 0%;	
-}
-
+}			
 
 h1.service-name{
-	font-size: 2.5em;
-	font-weight: 800;
+	font-size: 2em;
 	padding-top: 1%;
+	font-family: 'Oswald', sans-serif;	
+	color: rgb(176, 191, 180);
+	font-style: normal;
+	letter-spacing: 1px;
 }
 
 div.textwidget{
-	font-size: 1.8em;
+	font-size: 1.6em;
 	text-align: justify;
 	padding: 0% 5%;
+	color: rgb(176, 191, 180);
+	font-family: 'Josefin Sans', sans-serif;
 }
 
-h1.serviceH1{
-	margin: 2% 0% 1% 0%;
-	font-weight: 800;
+
+.btn1{
+    float: right;
+    clear: left;
+    margin: 2% 7% 25% 0%;
+    background: rgb(42, 45, 51);
+    color: rgb(176, 191, 180); 
+    text-shadow: none;
+    /*border: 2px solid rgb(42, 45, 51); */
+    padding: 5px 15px;
+    border-radius: 8%;
+    -webkit-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1.2em;
+ 	-webkit-transition: border-color 0.4s, color 0.4s;
+	transition: border-color 0.4s, color 0.4s;   
+	border-color: #272B2D;
+
 }
 
-div.col-xs-10.col-xs-offset-1.serviceInfo p{
-	font-size: 1.1em;
+
+.btn1:hover {
+		-webkit-transform: scale3d(0.9, 0.9, 1);
+	transform: scale3d(0.9, 0.9, 1);
+		-webkit-transition: -webkit-transform 0.7s;
+	transition: transform 0.7s;
 }
 
-h1.serviceH1,
-h1.service-name,
-div.col-xs-10.col-xs-offset-1.serviceInfo p,
-div.textwidget{
-	color: white;
+.btn1:hover::before{
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
+
+button.btn1{
+	outline:none;
+}
+
 
 
 /*------- modal ---------*/	
 
 
 /* body */
+
 div.modal-body,
 div.modal-footer,
 div.modal-header{
-	background: #9ca6a0;
+	background: rgb(42, 45, 51); 
 	font-style: normal;
 }
 
-div.modal-body,
-div.modal-header{
-	color: white;
-}
-	
 
 div.modal-header{
-	font-weight: 800;
 	border: none;
+}
+
+div.modal-footer{
+	    border-top: 1px solid rgb(28, 29, 33);
+}
+
+div.modal-backdrop{
+	z-index: 0;
 }
 
 
 /* text */
+
 div.modal-dialog div.textwidget p,
 div.modal-dialog div.textwidget ul,
 div.modal-dialog div.textwidget ol {
@@ -297,29 +327,16 @@ div.modal-dialog div.textwidget ol{
 }
 
 h4.modal-title{
-	font-size: 2.3em;
-	font-weight: 800;
-	margin-top:-7%;
+	font-size: 2em;
+	margin-bottom: 5%;	
+	font-family: 'Oswald', sans-serif;	
+	color: rgb(176, 191, 180);
+	font-style: normal;
+	letter-spacing: 1px;
 	text-align: left;
 }
 
-
-
-.btn1.btn-md.btn-default{
-	float: right;
-	clear: left;
-	margin: 2% 7% 15% 0%;
-	background: #b0bfb4;
-	color: white;
-	text-shadow: none;
-	font-size: 1.3em;
-	padding: 0.5%;
-	border: 1px solid #9ca6a0;
-	-webkit-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
-	box-shadow: inset -2px -4px 20px -6px rgba(0,0,0,0.75);
-
-}
+/* modal footer icons */
 
 .btn1.btn-md.btn-default:hover{
 	background: #c8d9c7;
@@ -331,8 +348,8 @@ a.contactModal,
 a.phoneModal{
 	float: left;
 	font-size: 2em;
-	color: white;
-	margin: 2% 3% 0% 3%;		
+	color: rgba(176, 191, 180, 0.35);
+	margin: 1% 2% 0% 3%;		
 }
 
 a.contactModal:hover,
@@ -344,19 +361,21 @@ a.phoneModal:focus{
 }
 
 div.modal-header button.close{
-	margin-top: -18px;
-	font-size: 3em;	
+	margin-top: -10px;
+	font-size: 2em;	
+	color: rgb(176, 191, 180);
+}
+
+.close:focus{
+	outline: none;
 }
 
 div.modal-footer a.fbModal img.icon-fb{
-	float:left;
-	width: 9%;
-	border:none;
+	float: right;
 	margin: 0%;
 	border-radius: 200px 200px 200px 200px;
 	-moz-border-radius: 200px 200px 200px 200px;
 	-webkit-border-radius: 200px 200px 200px 200px;
-	border: 2px solid #fff;
 }
 
 div.modal-footer a.fbModal img.icon-fb:hover{
@@ -364,14 +383,9 @@ div.modal-footer a.fbModal img.icon-fb:hover{
 }
 	
 
-div.modal-backdrop{
-	z-index: 0;
-}
+/*--------- end of modal -------------*/
 
-
-/*------- end of modal -------------*/
-
-/*---------------------------- end of services page -----------------------------------*/
+/*---------------------------- end of services page ---------------------------------------*/
 
 /*---------------------------- start of photo gallery -----------------------------------*/
 
@@ -717,11 +731,15 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 
 /*------------ END OF MIN-WIDTH 1200px and MAX-WIDTH 1500px (bootstrap lrg | desktop)-------------*/
 
+
+
+
 /*------------ START OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
 
 @media only screen and (min-width: 62.000em) and (max-width: 74.938em) {
 	
-		/*------------------------------- start of background image -------------------------------*/		
+
+	/*------------------------------- start of background image -------------------------------*/		
 	body.custom-background{
 		background-size: initial;
 	}
@@ -733,7 +751,7 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	}	
 	
 	ul.nav.navbar-nav.navbar-right{
-		margin: 1.5% -5%;
+		margin: 0;
 	}
 
 	.nav > li > a > img{
@@ -741,27 +759,35 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 		height: auto;
 		margin-top: -6%;
 	}
-	
-	nav.navbar-inverse{
-		height: 82px;
+
+	img.logo{	
+		max-width: 250px;
+		height: auto;
 	}
 	
-	img.logo{	
-		max-width: 350px;
-		height: auto;
+	.nav > li > a > img{
+		margin: 3% 0;
+	}
+	
+	ul.nav.navbar-nav.navbar-right li{
+		font-size: 1.2em;
 	}
 	
 	
 	/*------------------------------- end of navbar -------------------------------*/		
 	/*------------------------------- start of home page -------------------------------*/
 	div.homeText{
-		margin: 2% 0% 2% 3%;
+		margin: 0;
 	}
 		
 	section#intro{
 		background-size: initial;
 		padding-bottom: 26%;
 	}
+	
+	.logo img {
+    	max-width: 150px;
+    }
 	
 	h1.homeHeadline{
 	    font-size: 4em;
@@ -773,39 +799,44 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 
 	/*---------------------------- end of home page -----------------------------------*/
 	/*------------------------------- start of services page -------------------------------*/
-	.btn1.btn-md.btn-default{
-		font-size: 1em;
-	}
-	
-	div.col-xs-12.service-widget-background{
+
+	div.col-xs-12.service-widget-background {
 		height: auto;
-		padding-bottom: 2%;
+		padding-bottom: 10%;
+	}
+
+	.services-widget{
+		margin-top: 5%;
 	}
 	
-	div.col-xs-12.col-md-4.services-widget figure.img-rounded.service-img img{
-		border: 2px solid white;
-		width: 90%;
-		height: 90%;
+	.serviceInfo p{
+		font-size: 1.7em;
 	}
 	
-	h1.serviceH1{
+	.btn1 {	
+		margin: 0 6%;
+	}
 	
-		margin-top: 3%;
-				
+	.service-img{
+		float: left;
+		clear: both;
+		margin-top: 4%;
+	}
+	
+	.service-info{
+		position: absolute;
+		top: 10%;
+	    right: 0;
+		width: 65%;
+	    
+	}
+	
+	div.modal-header{
+	 	padding: 25px;
 	}
 
 	
-	p.service-info{
-		font-size: 1.1em;
-	}
 	
-	p.serviceText{
-		font-size: 0.7em;
-	}
-	
-	div.col-xs-10.col-xs-offset-1.serviceInfo{
-		padding: 0%;
-	}
 	/*------------------------------- end of services page -------------------------------*/
 	
 	/*------------------------------- start of photo gallery page -------------------------------*/
@@ -855,6 +886,8 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 }
 
 /*------------ END OF MIN-WIDTH 992px and MAX-WIDTH 1199px (bootstrap md | ipad landscape)-------------*/
+
+
 /*------------ START OF MIN-WIDTH 768px and MAX-WIDTH 991px (bootstrap sm | ipad portrait)-------------*/
 
 @media only screen and (min-width: 48.000em) and (max-width: 61.938em) {
@@ -863,7 +896,7 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	/*------------------------------- start of background image -------------------------------*/		
 	
 	body.custom-background{
-		background-size: initial;		
+		background-size: cover;		
 	}
 	
 	body.custom-background.page-template-page-about-php{
@@ -881,16 +914,15 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 		margin-top: 0%;
 	}	
 	
-
-
-	.nav > li > a > img{
-		width: 80%;
-		height: auto;
-		margin-top: -6%;
+	.nav > li > a > img {
+	    width: 60%;
+	    height: auto;
+	    margin-top: 6%;
+	    margin-right: 40%;
 	}
 	
 	ul.nav.navbar-nav.navbar-right{
-		margin: 1% -8%;
+		margin: 1% -2%;
 	}
 	
 	nav.navbar-inverse{
@@ -901,55 +933,56 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	
 	
 	img.logo{	
-		max-width: 300px;
+		max-width: 200px;
 		height: auto;
-		margin-top: 0%;
+		margin-top: 5%;
 	
 	}
 
 	
 	/*------------------------------- end of navbar -------------------------------*/	
-		
-	/*------------------------------- start of home page -------------------------------*/
-	div.homeText{
-		margin: 92% 0% 3% 0%;
-		border: none;
-		background: black;
-		width: 100%;
+	
+	/*------------------------------- start of footer -------------------------------*/
+	
+	.footer{
+		margin-bottom: 0%;
 	}
 	
-	.intro-section{
-		background-size: initial;
-		padding-bottom: 0;
+	
+	/*------------------------------- end of footer -------------------------------*/
+		
+	/*------------------------------- start of home page -------------------------------*/
+	
+	div.homeText{
+		width: 60%;
+		margin: 0;
 	}
 	
 	h1.homeHeadline{
 	    font-size: 4em;
 	}
 	
-	header.logo img{
-		display:none;
-	}
-	
 	p.homeText{
 	    font-size: 3em;
+	    margin-top: 7%; 
 	}
-
+	
+	.logo img {
+    	max-width: 150px;
+		height: auto;
+	}
 
 	/*---------------------------- end of home page -----------------------------------*/
 
 	/*------------------------------- start of services page -------------------------------*/
 
+	/*
+
 	div.col-xs-12.service-widget-background{
 		height: auto;
 		padding-bottom: 2%;
 	}
-	
-	div.col-xs-12.services-widget1 img, 
-	div.col-xs-12.services-widget2 img, 
-	div.col-xs-12.services-widget3 img{
-		border: 2px solid white;
-	}
+
 	
 	h1.serviceH1{
 		margin-top: 4%;
@@ -967,10 +1000,21 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	div.col-xs-10.col-xs-offset-1.serviceInfo{
 		padding: 0%;
 	}
+	*/
 	
-	section.container-fluid.services-section{
-		
+	.serviceInfo p {
+		padding: 0 5%;
+		font-size: 2em;
 	}
+	
+	div.modal-header {
+    	padding: 30px;
+	}
+	
+	div.textwidget {
+    	font-size: 2em;
+    }
+
 	/*------------------------------- end of services page -------------------------------*/
 	/*------------------------------- start of photo gallery page -------------------------------*/	
 	div.col-xs-12.photoGallery h1{
@@ -1022,100 +1066,77 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 @media only screen and (min-width: 20.000em) and (max-width: 47.938em) {
 	
 	/*------------------------------- start of navbar -------------------------------*/	
-	a.navbar-brand{
-		position: relative;
-	}	
-	
-	li.navLink.media{
-		padding: 3%;
-	}
-	
-	ul.nav.navbar-nav{
-		font-size: 0.6em;
-		margin-right: -18%;
-		margin-top: 0%;
-	}	
-	
-	.navbar-nav > li{
-		margin: 0% -30% 0% 30%; 
-	}
 
-	nav.navbar-inverse{
-		width: 100%;
-		height: auto;
-		
+
+	nav.navbar.navbar-inverse{
+		height: 60px;
+	}
+	
+	.navbar-inverse .navbar-toggle:hover, 
+	.navbar-inverse .navbar-toggle:focus{
+		background: none;
+	}
+	
+	.navbar-inverse .navbar-toggle{
+		border-color: none;
 	}
 	
 	img.logo{	
-		height: auto;
-		position: absolute;
-	}
-	
-	.navbar-toggle{
-		float: left;
-	}
-	
-	div.navbar-collapse.collapse li,
-	div.navbar-collapse.collapse.in {
-		float: left;
-		margin: 0;
-	}
-					
-	/*------------------------------- end of navbar -------------------------------*/	
-	/*------------------------------- start of home page -------------------------------*/	
-	div.homeText{
-		border: none;
-		background: rgba(0, 0, 0, 0.3);
-		width: 106%;
-	}
-	
-	header.logo img{
-		display:none;
+		max-width: 200px;
 	}
 		
+	.navbar-collapse.collapse.in{
+		margin-top: 1%;
+		background: rgba(28, 29, 33, 0.85);
+	}
+
+
+	button.navbar-toggle.collapsed span.icon-bar{
+		background: rgb(176, 191, 180);
+	}
+	
+	ul.nav.navbar-nav.navbar-right li {
+    	z-index: 999;
+    }
+	
+
+	.navbar-nav {
+    	margin: -8.5px 0;
+	}
+				
+	/*------------------------------- end of navbar -------------------------------*/	
+	
+	/*------------------------------- start of home page -------------------------------*/	
+	
+	.index{
+		z-index: -999;
+	}
+
 	/*------------------------------- end of home page -------------------------------*/
 	
 	/*------------------------------- start of services page -------------------------------*/
-	.btn1.btn-md.btn-default{
-		font-size: 1em;
-		float:none;
-		margin: 0% -6%;
-		width: 85%;
-	}
 	
-	div.col-xs-12.service-widget-background{
-		height: auto;
-		padding-bottom: 5%;
-	}
-	
-	div.col-xs-12.services-widget1 img, 
-	div.col-xs-12.services-widget2 img, 
-	div.col-xs-12.services-widget3 img{
-		border: 2px solid white;
-		width: 30%;
-	}
-	
+	div.col-xs-12.service-widget-background {
+   		padding: 5%;
+    }
 
+	.serviceInfo p {
+		padding: 0 5%;
+		text-align: justify;
+    }
+    
+ 	div.col-xs-12.services-widget figure img{
+		width: 200px;
+		height: auto;
+	}   
+      
+	.services-widget{
+		margin: -5% 0;
+	}	
 	
-	h1.serviceH1{
-		margin-top: 3%;
-	}
-	
-	h1.service-name{
-		font-size: 1.8em;
-	}
-	
-	p.service-info{
-		font-size: 1.1em;
-	}
-		
-	div.col-xs-10.col-xs-offset-1.serviceInfo{
-		padding: 0%;
-		font-size: 1.3em;
-	}
-		
 	/*------------------------------- end of services page -------------------------------*/	
 	
+
 	/*----------------- start of contact page ------------------*/
 	div.topContent h1{
 		font-size: 2em;
@@ -1128,65 +1149,13 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 		margin-bottom: 5%;
 	}
 
-    
-	
-		
-/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
-
-
-/*------------------------------- (iphone4, iphone5, iphone6, iphone6+ portrait)-------------------------------*/	
-	
-/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
-
-
-
-/*-------------------------------  (iphone4, iphone5, landscape) -------------------------------*/	
-
-/*-------------------------------  (iphone6, iphone6+, landscape)  -------------------------------*/	
-	
-
-		
-	
-/*-------------------------------  (iphone6, iphone6+, landscape)-------------------------------*/		
-	
-	/*------------ start of front page ------------*/	
-	
-	
-	/*------------ end of front page ------------*/
-	
-
-
-	/*------------ start of header  ---------------*/
-	
-
-	/*------------ end of header  ---------------*/	
-	
-	/*------------ start of header  ---------------*/	
-		
-
-		
-	/*------------ end of header  ---------------*/		
-	
-	/*------------ start of portfolio page  ---------------*/		
-
-	/*------------ end of portfolio page  ---------------*/	
-	
-
-    /*----------------- start of footer ------------------*/
-        
-
-    
-    /*----------------- end of footer ------------------*/	
-    
-    /*----------------- start of contact page ------------------*/
-	
-
-	/*----------------- end of contact page ------------------*/ 
-
+   
 	
 }
 
 /*------------ END OF MIN-WIDTH 320px and MAX-WIDTH 767px (bootstrap xs | iphone4, iphone5, iphone6)-------------*/
+
+
 
 /*------------ START OF MIN-WIDTH 320px and MAX-WIDTH 415px ( iphone4, iphone5, iphone6, iphone6+ portrait)-------------*/
 
@@ -1195,78 +1164,68 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	body.custom-background{
 		background-size: cover;
 	}
-	
+
+
 	
 	/*------------------------------- start of navbar -------------------------------*/	
-	a.navbar-brand{
-
-		margin: 0 20%;
-	}
-	
-	.nav > li > a > img{
-		width: 80%;
-		height: auto;
-		margin-top: -3%;
-		margin-left: -5%;
-	}
-	
-	img.logo{	
-		max-width: 250px;
-	}
-	
-	ul.nav.navbar-nav li a:hover{
-		border-bottom: none;
-	}
 		
+	ul.nav.navbar-nav.navbar-right li a:hover::before,
+	ul.nav.navbar-nav.navbar-right li.current_page_item a::before{
+		-webkit-transform: scale3d(0.2, 1, 1);
+		transform: scale3d(0.2, 1, 1);
+	}
+	
 	/*------------------------------- end of navbar -------------------------------*/		
+	
 	/*------------------------------- start of footer -------------------------------*/	
-	div.col-xs-12.footer{
-		height: 30px;
-	}	
+	
+
 	p.footerText{
 		font-size: 0.8em;
 		margin-top: 1%;
 	}
 	
-	/*------------------------------- end of footer -------------------------------*/		
-	/*------------------------------- start of home page -------------------------------*/
-
-
-	div.homeText{
-		margin: 0% 0% 30% -7%
+	.footer {
+    	margin-bottom: 0em;
 	}
 	
-	.intro-section{
-		background-size: 100% 80%;
-		padding-bottom: 68%;
+	/*------------------------------- end of footer -------------------------------*/	
+		
+	/*------------------------------- start of home page -------------------------------*/
+
+	div.homeText{
+		margin: 13% 0;
+		width: 100%;
 	}
 	
 	h1.homeHeadline{
-	    font-size: 2.5em;
+	    text-align: center;
+		font-size: 2em;
 	}
 	
 	p.homeText{
-	    font-size: 1.8em;
+	    text-align: center;
+		font-size: 1.5em;
 	}
 	
+	.logo img {
+   		max-width: 85px;
+   		height: auto;
+	}
+		
 	/*---------------------------- end of home page -----------------------------------*/
 
-
     /*----------------- start of services page------------------*/    
-
-	div.col-xs-12.services-widget figure img{
-		width: 100%;
-		height: auto;
-		margin-top: 15%;
-	}
-	
-	div.textwidget{
-		font-size: 1.1em;
-	}
-	
-	div.modal-footer a.fbModal img.icon-fb{
-		width: 15%;
-	}
+     
+    div.textwidget {
+		font-size: 1.3em;
+    }
+    
+    .serviceInfo p {
+    	font-size: 1.4em;
+    }
+    
+    	
     /*----------------- end of services page------------------*/   
     
     /*----------------- start of photo gallery page ------------------*/
@@ -1349,63 +1308,66 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 
 @media only screen and (min-width: 26.000em) and (max-width: 35.500em) {
 	
-	
-	/*------------------------------- start of navbar -------------------------------*/	
-	a.navbar-brand{
-		margin: -48% 0% 15% 90%;
-	}
-	
-	.nav > li > a > img{
-		width: 80%;
-		height: auto;
-		margin-top: -6%;
-		margin-left: -4%;
-	}
-	
-	img.logo{	
-		max-width: 300px;
-	}
-	
-	button.navbar-toggle.collapsed{
-		float: none;
-		margin-left: 27%;
-	}
-		
-	
 
+
+	/*------------------------------- start of navbar -------------------------------*/	
 	
-	/*------------------------------- end of navbar -------------------------------*/		
+	ul.nav.navbar-nav.navbar-right li a:hover::before,
+	ul.nav.navbar-nav.navbar-right li.current_page_item a::before{
+		-webkit-transform: scale3d(0.2, 1, 1);
+		transform: scale3d(0.2, 1, 1);
+	}
+	
+	/*------------------------------- end of navbar -------------------------------*/	
+		
 	/*------------------------------- start of footer -------------------------------*/	
-	div.col-xs-12.footer{
-		height: 30px;
-	}	
+	
 	p.footerText{
 		font-size: 0.8em;
 		margin-top: 1%;
 	}
 	
+	.footer {
+    	margin-bottom: -5em;
+    }
+	
 	/*------------------------------- end of footer -------------------------------*/		
+	
 	/*------------------------------- start of home page -------------------------------*/
+	
+	
 	div.homeText{
-		margin:0% 0% 20% -3%;
-	}
-
-	.intro-section{
-		background-size: 100%;
-		padding-bottom: 3%;
+		margin: 0;
+		width: 50%;
 	}
 	
 	h1.homeHeadline{
-	    font-size: 2.5em;
+	    text-align: center;
+		font-size: 2em;
 	}
 	
 	p.homeText{
-	    font-size: 2em;
-	    margin-top: -3%;
-	}	
+	    text-align: center;
+		font-size: 1.5em;
+	}
 	
+	.logo img {
+   		max-width: 65px;
+   		height: auto;
+	}
 	
+	/*------------------------------- end of home page -------------------------------*/
+		
+	/*----------------- start of services page ------------------*/
+	
+	.serviceInfo p {
+    	font-size: 1.5em;
+    }
+
+    /*----------------- end of services page ------------------*/
+
 	/*----------------- start of about page ------------------*/
+	
 	.about-section{
 		background-size: inherit;
 	}	
@@ -1415,26 +1377,8 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 	}
 
 	
-	/*----------------- end of about page ------------------*/ 		
-	/*----------------- start of contact page ------------------*/
-
-	div.textwidget{
-		font-size: 1.3em;
-	}
-	
-	div.modal-dialog div.textwidget p, 
-	div.modal-dialog div.textwidget ul, 
-	div.modal-dialog div.textwidget ol{
-		font-size: 0.8em;
-	}
-	
-	div.col-xs-12.services-widget figure img{
-		width: 60%;
-		height: auto;
-	}
-
-    /*----------------- end of contact page ------------------*/
-    
+	/*----------------- end of about page ------------------*/ 
+			 
     /*----------------- start of photo gallery page ------------------*/
     
     div.col-xs-12.photoGallery h1{
@@ -1507,67 +1451,59 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 
 @media only screen and (min-width: 35.563em) and (max-width: 46.063em) {
 
-	/*------------------------------- start of background image -------------------------------*/		
-
-	/*------------------------------- end of background image -------------------------------*/		
-	
 	/*------------------------------- start of navbar -------------------------------*/	
-	a.navbar-brand{
-		margin: -34% 0% 17% 90%;
+	
+	ul.nav.navbar-nav.navbar-right li a:hover::before,
+	ul.nav.navbar-nav.navbar-right li.current_page_item a::before{
+		-webkit-transform: scale3d(0.1, 1, 1);
+		transform: scale3d(0.1, 1, 1);
 	}
 	
-	.nav > li > a > img{
-		width: 80%;
-		height: auto;
-		margin-top: -6%;
-	}
-	
-	img.logo{	
-		max-width: 300px;
-	}
-	
-	button.navbar-toggle.collapsed{
-		float: none;
-		margin-left: 27%;
-	}
-		
-	div.navbar-collapse.collapse.in{
-		width: 100%;
-	}
-	
-	ul.nav.navbar-nav.navbar-right{
-		width: 100%;
-		margin: 2% 10%;
-	}
-	
-	/*------------------------------- end of navbar -------------------------------*/	
-	/*------------------------------- start of footer -------------------------------*/	
-	div.col-xs-12.footer{
-		height: 30px;
-	}	
-	
-	/*------------------------------- end of footer -------------------------------*/		
-	/*------------------------------- start of home page -------------------------------*/
-	div.homeText{
-		margin:0% 0% 20% -3%;
-	}
+	/*------------------------------- end of navbar -------------------------------*/
 
-	.intro-section{
-		background-size: 100%;
-		padding-bottom: 0;
+	/*------------------------------- start of footer -------------------------------*/	
+	
+	.footer {
+    	margin-bottom: -5em;
+    }
+		
+	/*------------------------------- end of footer -------------------------------*/	
+		
+	/*------------------------------- start of home page -------------------------------*/
+
+	div.homeText{
+		margin: 0;
 	}
 	
 	h1.homeHeadline{
-	    font-size: 3em;
+	    text-align: center;
+		font-size: 3em;
 	}
 	
 	p.homeText{
-	    font-size: 2.5em;
-	    margin-top: 2%;
+	    text-align: center;
+		font-size: 2em;
 	}
+	
+	.logo img {
+   	 max-width: 100px;
+   	 height: auto;
+	}
+	
+	/*---------------------------- end of home page -----------------------------------*/		
+			
+	/*----------------- start of services page ------------------*/
+	
+	.serviceInfo p {
+    	font-size: 1.5em;
+    }
 
-	/*---------------------------- end of home page -----------------------------------*/	
-	/*----------------- start of about page ------------------*/
+
+    /*----------------- end of services page ------------------*/
+    
+    
+    /*----------------- start of about page ------------------*/
+    
 	h1.aboutHeadline{
 		font-size: 3em;
 	}
@@ -1576,17 +1512,7 @@ div.sections3.col-md-10.col-md-1.col-xs-12.widgetContainer{
 		font-size: 1.5em;
 	}
 	
-	/*----------------- end of about page ------------------*/ 		
-	/*----------------- start of services page ------------------*/
-	div.topContent h1{
-		font-size: 3em;
-	}
-
-
-	div.textwidget{
-		font-size: 1.5em;
-	}
-    /*----------------- end of services page ------------------*/
+	/*----------------- end of about page ------------------*/ 
     
     /*----------------- start of photo gallery page ------------------*/
     
