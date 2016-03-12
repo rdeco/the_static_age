@@ -35,7 +35,9 @@
 	                ?>	                
                 </p>
             </div>                
-        </div> <!-- .col-xs-12 -->
-    </div> <!-- .row -->	       
+
+			
+        </div> <!-- .col-xs-12 -->   
+    </div> <!-- .row -->	
+    <?php get_footer(); ?>    
 </section> <!-- .container-fluid .intro-section -->
-<?php get_footer(); ?>
