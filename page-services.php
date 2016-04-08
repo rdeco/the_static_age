@@ -7,15 +7,34 @@
 		<!-- Services Section -->
 	    <section id="services" class="container-fluid services-section" >
 	        <div class="row">
+		        <header class="header-wrapper">
+                    <h1 class="title-H1">	                
+	                    <?php
+	                    	$postmeta = get_post_meta($post->ID);
+	
+							if ( isset($postmeta['meta_box_title_field'][0]) ) {
+	                        	echo $postmeta['meta_box_title_field'][0];
+	                    	}
+	                	?>
+	                </h1>
+	                <p class="page-description">
+		                <?php
+	                    	$postmeta = get_post_meta($post->ID);
+	
+							if ( isset($postmeta['meta_box_pageDescription_field'][0]) ) {
+	                        	echo $postmeta['meta_box_pageDescription_field'][0];
+	                    	}
+	                	?>
+	                </p>
+			 	</header>
                 <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3 serviceInfo">
 	                
 	                <?php 
 		                if(have_posts()) {
 		                	while(have_posts()){
 			                	the_post();
-			 		?>
-                    <h1 class="service-H1"><?php the_title(); ?></h1>
-                    <?php the_content(); 
+									
+								the_content(); 
 					
 		                	}
 	                	}
